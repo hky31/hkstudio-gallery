@@ -1,2 +1,2 @@
-# test-sample-app
-test
+# hkstudio-gallery
+test publishing photo gallery
