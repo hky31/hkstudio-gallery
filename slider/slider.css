@@ -49,15 +49,15 @@
 }
 
 .slide .item:nth-child(4) {
-	left: calc(90% + 210px);
+	left: calc(90% + 150px);
 }
 
 .slide .item:nth-child(5) {
-	left: calc(90% + 430px);
+	left: calc(90% + 270px);
 }
 
 .slide .item:nth-child(n + 6) {
-	left: calc(90% + 650px);
+	left: calc(90% + 390px);
 	opacity: 0;
 }
 
