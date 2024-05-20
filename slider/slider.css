@@ -136,3 +136,44 @@
 	background: #ababab;
 	color: #fff;
 }
+
+.menu-gauche {
+	width: 200px; /* Largeur du menu */
+	background-color: #333; /* Couleur d'arrière-plan */
+	color: #fff; /* Couleur du texte */
+	padding: 10px; /* Rembourrage interne */
+	position: fixed; /* Positionnement fixe */
+	top: 0; /* Positionnement en haut */
+	left: 0; /* Positionnement à gauche */
+	height: 100vh; /* Hauteur totale de la fenêtre */
+	margin: 0; /* Marge */
+	margin-left: -160px; /* Marge */
+}
+
+.menu-gauche ul {
+	list-style: none; /* Supprimer les puces par défaut */
+	margin: 0; /* Marge interne */
+	padding: 0; /* Rembourrage interne */
+}
+
+.menu-gauche li {
+	margin-bottom: 10px; /* Marge entre les éléments du menu */
+}
+
+.menu-gauche a {
+	text-decoration: none; /* Supprimer le soulignement */
+	color: #fff; /* Couleur du texte des liens */
+	display: block; /* Afficher les liens sur une seule ligne */
+	padding: 8px 10px; /* Rembourrage des liens */
+}
+
+.menu-gauche a:hover {
+	/* Style au survol de la souris */
+	background-color: #555; /* Couleur d'arrière-plan au survol */
+}
+main:hover .menu-gauche {
+	z-index: 10;
+	display: block; /* Afficher le menu au survol */
+	margin-left: 0px; /* Marge */
+	opacity: 0.8;
+}
