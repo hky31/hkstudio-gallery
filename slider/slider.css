@@ -79,6 +79,7 @@
 }
 
 .content .name {
+	font-family: "Trebuchet MS";
 	font-size: 40px;
 	text-transform: uppercase;
 	font-weight: bold;
