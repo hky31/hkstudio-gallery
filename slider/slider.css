@@ -137,6 +137,10 @@
 	color: #fff;
 }
 
+li {
+	font-weight: bold;
+}
+
 .menu-gauche {
 	width: 200px; /* Largeur du menu */
 	background-color: #333; /* Couleur d'arrière-plan */
