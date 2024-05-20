@@ -4,6 +4,7 @@
 	overflow: hidden;
 	display: grid;
 	place-items: center;
+	margin-left: 60px;
 }
 
 * {
