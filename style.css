@@ -9,39 +9,25 @@ body {
 	margin: 50px;
 }
 
-h3 {
+.submenu a,
+#link-hk {
 	font-family: "Trebuchet MS";
-}
-
-li {
 	font-weight: bold;
+	color: white;
 }
 
-.menu-gauche {
-	width: 60px; /* Largeur du menu */
-	background-color: #333; /* Couleur d'arrière-plan */
-	color: #fff; /* Couleur du texte */
-	padding: 10px; /* Rembourrage interne */
-	position: fixed; /* Positionnement fixe */
-	top: 0; /* Positionnement en haut */
-	left: 0; /* Positionnement à gauche */
-	height: 100vh; /* Hauteur totale de la fenêtre */
-	margin: 0; /* Marge */
+footer {
+	position: absolute; /* Position footer absolutely */
+	bottom: 0; /* Place it at the bottom */
+	left: 0; /* Align it to the left */
+	width: 100%; /* Set footer width to 100% */
+	text-align: center; /* Optionally center content horizontally */
+	background-color: #343a40;
+	font-family: "Trebuchet MS";
+	font-weight: bold;
+	color: white;
 }
 
-.menu-gauche ul {
-	list-style: none; /* Supprimer les puces par défaut */
-	margin: 0; /* Marge interne */
-	padding: 0; /* Rembourrage interne */
-}
-
-.menu-gauche li {
-	margin-bottom: 10px; /* Marge entre les éléments du menu */
-}
-
-.menu-gauche a {
-	text-decoration: none; /* Supprimer le soulignement */
-	color: #fff; /* Couleur du texte des liens */
-	display: block; /* Afficher les liens sur une seule ligne */
-	padding: 8px 10px; /* Rembourrage des liens */
+footer p {
+	margin-top: 1rem;
 }

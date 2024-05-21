@@ -4,7 +4,7 @@
 	overflow: hidden;
 	display: grid;
 	place-items: center;
-	margin-left: 60px;
+	/* margin-left: 60px; */
 }
 
 * {
@@ -77,7 +77,7 @@
 .slide .item:nth-child(2) .content {
 	display: block;
 	background-color: black;
-	opacity: 0.7;
+	opacity: 0.8;
 	padding: 10px;
 	border-radius: 10px;
 }
@@ -143,10 +143,6 @@
 	color: #fff;
 }
 
-li {
-	font-weight: bold;
-}
-
 .menu-gauche {
 	width: 60px; /* Largeur du menu */
 	background-color: #333; /* Couleur d'arrière-plan */
@@ -174,4 +170,42 @@ li {
 	color: #fff; /* Couleur du texte des liens */
 	display: block; /* Afficher les liens sur une seule ligne */
 	padding: 8px 10px; /* Rembourrage des liens */
+}
+
+nav {
+	width: 100%; /* Adjust width as needed */
+	min-height: fit-content;
+	z-index: 20;
+	padding: 0 !important;
+}
+
+nav ul {
+	display: flex; /* Or use float: left; */
+	list-style: none; /* Remove default bullet points */
+	padding: 0;
+	margin: 0;
+}
+
+nav li {
+	margin-right: 10px; /* Adjust spacing */
+	padding: 10px; /* Adjust padding */
+}
+
+nav li a {
+	text-decoration: none;
+	color: #000;
+}
+
+nav li ul.submenu {
+	/* Target sub-menu class */
+	display: none;
+	position: absolute; /* Position sub-menu below main item */
+	background-color: #fff; /* Set background color */
+	padding: 10px; /* Adjust padding */
+	list-style: none; /* Remove default bullet points */
+}
+
+nav li:hover ul.submenu {
+	/* Show sub-menu on hover */
+	display: block;
 }
