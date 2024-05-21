@@ -209,3 +209,29 @@ nav li:hover ul.submenu {
 	/* Show sub-menu on hover */
 	display: block;
 }
+
+/* Styles for portrait mode */
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+	/* Your portrait mode styles here */
+	.slide .item:nth-child(1),
+	.slide .item:nth-child(2) {
+		width: 97%;
+		margin-left: 7px;
+	}
+
+	.item .content {
+		left: 10px;
+		width: 270px;
+	}
+}
+
+/* Styles for landscape mode */
+@media only screen and (max-height: 600px) and (orientation: landscape) {
+	.content .des {
+		font-size: x-small;
+	}
+
+	.content .name {
+		font-size: medium;
+	}
+}
