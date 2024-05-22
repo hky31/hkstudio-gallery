@@ -84,9 +84,10 @@
 
 .content .name {
 	font-family: "Trebuchet MS";
-	font-size: 40px;
+	font-size: 35px;
 	text-transform: uppercase;
 	font-weight: bold;
+	white-space: nowrap;
 	opacity: 0;
 	animation: animate 1s ease-in-out 1 forwards;
 }
@@ -223,15 +224,23 @@ nav li:hover ul.submenu {
 		left: 10px;
 		width: 270px;
 	}
+
+	.des_me {
+		font-size: 16px;
+	}
 }
 
 /* Styles for landscape mode */
 @media only screen and (max-height: 600px) and (orientation: landscape) {
-	.content .des {
-		font-size: x-small;
+	.item .content {
+		left: 20px;
+	}
+	.content .name_me {
+		font-size: 20px;
 	}
 
-	.content .name {
-		font-size: medium;
+	.des_me {
+		font-size: 10px;
+		padding: 0;
 	}
 }
