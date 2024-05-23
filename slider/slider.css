@@ -84,10 +84,9 @@
 
 .content .name {
 	font-family: "Trebuchet MS";
-	font-size: 35px;
+	font-size: 40px;
 	text-transform: uppercase;
 	font-weight: bold;
-	white-space: nowrap;
 	opacity: 0;
 	animation: animate 1s ease-in-out 1 forwards;
 }
@@ -144,35 +143,6 @@
 	color: #fff;
 }
 
-.menu-gauche {
-	width: 60px; /* Largeur du menu */
-	background-color: #333; /* Couleur d'arrière-plan */
-	color: #fff; /* Couleur du texte */
-	padding: 10px; /* Rembourrage interne */
-	position: fixed; /* Positionnement fixe */
-	top: 0; /* Positionnement en haut */
-	left: 0; /* Positionnement à gauche */
-	height: 100vh; /* Hauteur totale de la fenêtre */
-	margin: 0; /* Marge */
-}
-
-.menu-gauche ul {
-	list-style: none; /* Supprimer les puces par défaut */
-	margin: 0; /* Marge interne */
-	padding: 0; /* Rembourrage interne */
-}
-
-.menu-gauche li {
-	margin-bottom: 10px; /* Marge entre les éléments du menu */
-}
-
-.menu-gauche a {
-	text-decoration: none; /* Supprimer le soulignement */
-	color: #fff; /* Couleur du texte des liens */
-	display: block; /* Afficher les liens sur une seule ligne */
-	padding: 8px 10px; /* Rembourrage des liens */
-}
-
 nav {
 	width: 100%; /* Adjust width as needed */
 	min-height: fit-content;
@@ -224,23 +194,15 @@ nav li:hover ul.submenu {
 		left: 10px;
 		width: 270px;
 	}
-
-	.des_me {
-		font-size: 16px;
-	}
 }
 
 /* Styles for landscape mode */
 @media only screen and (max-height: 600px) and (orientation: landscape) {
-	.item .content {
-		left: 20px;
-	}
-	.content .name_me {
-		font-size: 20px;
+	.content .des {
+		font-size: x-small;
 	}
 
-	.des_me {
-		font-size: 10px;
-		padding: 0;
+	.content .name {
+		font-size: medium;
 	}
 }
