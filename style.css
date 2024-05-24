@@ -28,16 +28,53 @@ body {
 	opacity: 1; /* Make the active content section fully visible */
 }
 
-.back-to-top-button {
-	position: fixed;
-	bottom: 1rem; /* Adjust position as needed */
-	right: 1rem;
-	background-color: #333;
-	color: #fff;
-	padding: 0.5rem 1rem;
-	border-radius: 5px;
-	opacity: 0; /* Hide initially */
-	transition: opacity 0.3s ease;
+.sticky-menu {
+	position: sticky; /* This makes the element sticky */
+	top: 0; /* Positions it at the top of the viewport */
+	z-index: 100; /* Ensures the header stays on top of content */
+}
+
+nav {
+	width: 100%; /* Adjust width as needed */
+	padding: 0;
+}
+
+nav {
+	width: 100%; /* Adjust width as needed */
+	min-height: fit-content;
+	z-index: 20;
+	padding: 0 !important;
+}
+
+nav ul {
+	display: flex; /* Or use float: left; */
+	list-style: none; /* Remove default bullet points */
+	padding: 0;
+	margin: 0;
+}
+
+nav li {
+	margin-right: 10px; /* Adjust spacing */
+	padding: 10px; /* Adjust padding */
+}
+
+nav li a {
+	text-decoration: none;
+	color: #000;
+}
+
+nav li ul.submenu {
+	/* Target sub-menu class */
+	display: none;
+	position: absolute; /* Position sub-menu below main item */
+	background-color: #fff; /* Set background color */
+	padding: 10px; /* Adjust padding */
+	list-style: none; /* Remove default bullet points */
+}
+
+nav li:hover ul.submenu {
+	/* Show sub-menu on hover */
+	display: block;
 }
 
 footer {
@@ -54,4 +91,38 @@ footer {
 
 footer p {
 	margin-top: 1rem;
+}
+
+/* Styles for portrait mode */
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+	nav {
+		max-height: 50px;
+		padding: 0px !important;
+	}
+
+	nav li a {
+		padding: 0px !important;
+		margin-left: 5px;
+	}
+
+	nav li ul.submenu {
+		padding: 10px 0;
+	}
+}
+
+/* Styles for landscape mode */
+@media only screen and (max-height: 600px) and (orientation: landscape) {
+	nav {
+		max-height: 50px;
+		padding: 0px !important;
+	}
+
+	nav li a {
+		padding: 0px !important;
+		margin-left: 5px;
+	}
+
+	nav li ul.submenu {
+		padding: 10px 0;
+	}
 }

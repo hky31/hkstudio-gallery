@@ -81,25 +81,25 @@ $prev_reflect.addEventListener("click", () => {
 /**************************************** */
 /* floating button to get back to the top */
 /**************************************** */
-const btn = document.getElementById("back-to-top");
+// const btn = document.getElementById("back-to-top");
 
-window.onscroll = function () {
-	scrollFunction();
-};
+// window.onscroll = function () {
+// 	scrollFunction();
+// };
 
-function scrollFunction() {
-	if (
-		document.body.scrollTop > 200 ||
-		document.documentElement.scrollTop > 200
-	) {
-		btn.style.opacity = 1;
-	} else {
-		btn.style.opacity = 0;
-	}
-}
+// function scrollFunction() {
+// 	if (
+// 		document.body.scrollTop > 200 ||
+// 		document.documentElement.scrollTop > 200
+// 	) {
+// 		btn.style.opacity = 1;
+// 	} else {
+// 		btn.style.opacity = 0;
+// 	}
+// }
 
-// When the user clicks on the button, scroll to the top of the document
-btn.addEventListener("click", function () {
-	document.body.scrollTop = 0; // For Safari
-	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-});
+// // When the user clicks on the button, scroll to the top of the document
+// btn.addEventListener("click", function () {
+// 	document.body.scrollTop = 0; // For Safari
+// 	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+// });

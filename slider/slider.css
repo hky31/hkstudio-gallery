@@ -18,7 +18,7 @@
 	width: 100%;
 	height: 80%;
 	background: #f5f5f5;
-	box-shadow: 0 30px 50px #dbdbdb;
+	/* box-shadow: 0 30px 50px #dbdbdb; */
 }
 
 .container .slide .item {
@@ -28,7 +28,7 @@
 	top: 50%;
 	transform: translate(0, -50%);
 	border-radius: 20px;
-	box-shadow: 0 30px 50px #505050;
+	box-shadow: 0 10px 30px #505050;
 	background-position: 50% 50%;
 	background-size: cover;
 	display: inline-block;
@@ -143,44 +143,6 @@
 	color: #fff;
 }
 
-nav {
-	width: 100%; /* Adjust width as needed */
-	min-height: fit-content;
-	z-index: 20;
-	padding: 0 !important;
-}
-
-nav ul {
-	display: flex; /* Or use float: left; */
-	list-style: none; /* Remove default bullet points */
-	padding: 0;
-	margin: 0;
-}
-
-nav li {
-	margin-right: 10px; /* Adjust spacing */
-	padding: 10px; /* Adjust padding */
-}
-
-nav li a {
-	text-decoration: none;
-	color: #000;
-}
-
-nav li ul.submenu {
-	/* Target sub-menu class */
-	display: none;
-	position: absolute; /* Position sub-menu below main item */
-	background-color: #fff; /* Set background color */
-	padding: 10px; /* Adjust padding */
-	list-style: none; /* Remove default bullet points */
-}
-
-nav li:hover ul.submenu {
-	/* Show sub-menu on hover */
-	display: block;
-}
-
 /* Styles for portrait mode */
 @media only screen and (max-width: 600px) and (orientation: portrait) {
 	/* Your portrait mode styles here */
@@ -194,10 +156,21 @@ nav li:hover ul.submenu {
 		left: 10px;
 		width: 270px;
 	}
+	.container {
+		height: 80%;
+	}
+	.slider {
+		height: 45vh;
+	}
 }
 
 /* Styles for landscape mode */
 @media only screen and (max-height: 600px) and (orientation: landscape) {
+	/* .container .slide .item {
+		width: 80px;
+		height: 120px;
+	} */
+
 	.content .des {
 		font-size: x-small;
 	}
@@ -205,4 +178,15 @@ nav li:hover ul.submenu {
 	.content .name {
 		font-size: medium;
 	}
+
+	/* .slide .item:nth-child(3) {
+		width: 60px;
+		height: 100px;
+		left: 95%;
+	}
+	.slide .item:nth-child(4) {
+		width: 60px;
+		height: 100px;
+		left: calc(90% + 130px);
+	} */
 }
